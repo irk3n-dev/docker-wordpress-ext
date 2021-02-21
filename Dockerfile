@@ -77,7 +77,7 @@ set mouse-=a' > ~/.vimrc; \
   echo "#################################################" && \
   echo "Installing WP-CLI..." && \
   echo "#################################################" && \
-  curl -o /usr/bin/wp-cli https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar && chmod a+x /usr/bin/wp && \
+  curl -o /usr/bin/wp https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar && chmod a+x /usr/bin/wp && \
   #
   echo "#################################################" && \
   echo "Enabling production ready php ini file..." && \
