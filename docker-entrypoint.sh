@@ -1,4 +1,4 @@
 #!/bin/bash
 
 # redis
-redis-server --daemonize yes
+exec redis-server --daemonize yes

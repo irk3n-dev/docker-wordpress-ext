@@ -136,8 +136,8 @@ RUN \
 
 ENV WP_REVERSE_HTTPS_PROXY="true"
 
-#COPY docker-entrypoint.sh /docker-entrypoint.sh
-#RUN  chmod +x /docker-entrypoint.sh
-#ENTRYPOINT [ "/docker-entrypoint.sh" ]
+COPY docker-entrypoint.sh /docker-entrypoint.sh
+RUN  chmod +x /docker-entrypoint.sh
+ENTRYPOINT [ "/docker-entrypoint.sh" ]
 
-CMD ["redis-server", "--daemonize yes"]
+#CMD ["redis-server", "--daemonize yes"]
