@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Start apache2
-apachectl -D FOREGROUND
+apachectl -D FOREGROUND &
 status=$?
 if [ $status -ne 0 ]; then
   echo "Failed to start apache2: $status"
@@ -9,7 +9,7 @@ if [ $status -ne 0 ]; then
 fi
 
 # redis
-redis-server --daemonize yes
+redis-server --daemonize yes &
 status=$?
 if [ $status -ne 0 ]; then
   echo "Failed to start redis: $status"
