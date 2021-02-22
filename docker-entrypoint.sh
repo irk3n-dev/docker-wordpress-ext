@@ -2,3 +2,4 @@
 
 # redis
 exec redis-server --daemonize yes
+

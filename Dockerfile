@@ -141,3 +141,4 @@ RUN  chmod +x /docker-entrypoint.sh
 ENTRYPOINT [ "/docker-entrypoint.sh" ]
 
 #CMD ["redis-server", "--daemonize yes"]
+CMD ["redis-server"]
