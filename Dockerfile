@@ -30,9 +30,7 @@ RUN cd /tmp && \
   tar xvzf redis-stable.tar.gz && \
   cd redis-stable && \
   make && \
-  make install && \
-  RUN sysctl vm.overcommit_memory=1
-# redis-server --daemonize yes
+  make install
 
 # extensions = basic for wordpress
 #RUN docker-php-ext-configure gd --with-jpeg && \
